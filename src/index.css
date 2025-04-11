@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-blue: #00f3ff;
+  }
+  
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+.glass-card {
+  @apply backdrop-blur-md bg-white/10 border border-white/20;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px var(--neon-blue),
+               0 0 20px var(--neon-blue),
+               0 0 30px var(--neon-blue);
+}
+
+.hover-neon {
+  @apply transition-all duration-300;
+}
+
+.hover-neon:hover {
+  @apply neon-glow scale-105;
+}
+
+.service-card {
+  @apply glass-card p-6 rounded-xl hover-neon cursor-pointer;
+}
+
+.whatsapp-button {
+  @apply fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300;
+}

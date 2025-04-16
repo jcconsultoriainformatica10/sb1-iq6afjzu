@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Sun, Mic2, Camera, ThermometerSun, Blinds, Star, ChevronRight, MapPin, AlignCenter } from 'lucide-react';
+import { Home, Sun, Mic2, Camera, ThermometerSun, Blinds, Star, ChevronRight, MapPin } from 'lucide-react';
 
 function App() {
   const services = [
@@ -25,13 +25,8 @@ function App() {
     },
     {
       icon: <Blinds className="w-8 h-8" />,
-      title: "Sonorização Integrada",
-      description: " Compartilhamento de sons em ambientes integrados"
-    },
-    {
-      icon: <Blinds className="w-8 h-8" />,
       title: "Automação Completa",
-      description: "Cortinas, portões e cerca - elétrica"
+      description: "Cortinas, portões e som ambiente integrados"
     }
   ];
 
@@ -121,10 +116,10 @@ function App() {
                 <p className="text-xl text-gray-300 mb-6">
                   Somos especialistas em transformar residências comuns em casas inteligentes, 
                   proporcionando conforto, segurança e praticidade através da mais alta tecnologia 
-                  em automação residencial. Atuamos desde a venda de equipamentos, a instalações de infra - estrutura.
+                  em automação residencial.
                 </p>
                 <p className="text-xl text-gray-300 mb-6">
-                  Nossa missão é tornar a vida dos nossos clientes mais confortável e conectada, 
+                  Nossa missão é tornar a vida dos nossos clientes mais simples e conectada, 
                   com soluções personalizadas e atendimento de excelência.
                 </p>
                 <div className="flex items-start space-x-2 text-gray-300">
@@ -134,14 +129,6 @@ function App() {
                     <p>Rua José Iran Marino dos Santos, 19</p>
                     <p>Jardim Ipanema</p>
                     <p>Sorocaba - SP</p>
-                    </div>
-                  {/* Email de contato */}
-               <div className="font-bold mb-2 text-center text-gray-300">
-                <p>Contato: <a href="mailto:contato.jcautomacao@gmail.com" className="text-[#00f3ff] hover:underline">
-          contato.jcautomacao@gmail.com
-                 </a>
-                 {/* mt-8 text-center text-gray-400*/}
-               </p>
                   </div>
                 </div>
               </div>
@@ -164,7 +151,7 @@ function App() {
 
       {/* Testimonials Section */}
       <section id="depoimentos" className="py-24 bg-gray-900">
-      <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-16 text-center neon-glow">Depoimentos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -213,30 +200,17 @@ function App() {
               <a href="#sobre" className="hover-neon mb-4 md:mb-0">Sobre</a>
               <a href="#depoimentos" className="hover-neon">Depoimentos</a>
             </div>
-            
-            <div className="font-bold mb-2 text-center text-gray-300">
-                <p>Contato: <a href="mailto:contato.jcautomacao@gmail.com" className="text-[#00f3ff] hover:underline">
-          contato.jcautomacao@gmail.com
-                 </a>
-                 {/* mt-8 text-center text-gray-400*/}
-               </p>
-                  </div> 
           </div>
         </div>
-        <hr className="mt-8 text-center text-gray-1 " />
-          <p className="text-xl text-gray-600 mb-12 text-center">
-          © 2025 Todos os direitos reservados.
-</p>
       </footer>
 
-      {/* Fixed WhatsApp Button my-4 w-1/2 mx-auto */}
+      {/* Fixed WhatsApp Button */}
       <a href={whatsappLink} className="whatsapp-button">
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.4 3.6C18.2 1.4 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8.9 3.8 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.4-6.2-3.6-8.4zM12 22c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-3.8 1 1-3.8-.2-.4C2.5 15.6 2 13.8 2 12 2 6.5 6.5 2 12 2c2.6 0 5 1 6.8 2.8C20.6 6.6 21.6 9 21.6 12c0 5.5-4.5 10-9.6 10zm5.2-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6 0-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.4.1-.5.1-.1.3-.3.4-.4.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C9.7 9.7 9.2 8.2 9 7.6c-.2-.6-.4-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.2-.2-.3-.5-.4z"/>
         </svg>
       </a>
     </div>
-    
   );
 }
 
